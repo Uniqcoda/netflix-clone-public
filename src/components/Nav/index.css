@@ -1,0 +1,144 @@
+.nav__black {
+  background-color: #111;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 0 2%;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  display: flex;
+}
+
+/* LEFT */
+.nav__left {
+  display: flex;
+  align-items: center;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__brand > img {
+  height: 2.3rem;
+}
+
+.nav_links {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* RIGHT */
+.nav__right {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  position: absolute;
+  right: 5%;
+  height: 100%;
+  top: 0;
+}
+
+.nav__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+}
+.nav__search > button {
+  background-color: transparent;
+  border: none;
+}
+
+.nav__search > button:focus {
+  outline: none;
+}
+
+.nav__search > button > svg {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav__search > input {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.nav__search > input:focus {
+  outline: none;
+}
+
+.show-search {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.show-search > input {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__notifications > svg {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav__avatar {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav__avatar > span {
+  margin-right: 5px;
+}
+
+.nav__avatar > span > img {
+  border-radius: 4px;
+  height: 32px;
+  vertical-align: middle;
+  width: 32px;
+}
+
+.nav__avatar > span > svg {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .nav_links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav_links {
+    display: none;
+  }
+
+  .show-search {
+    width: 120px;
+  }
+}

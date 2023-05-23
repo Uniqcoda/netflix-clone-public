@@ -1,0 +1,119 @@
+.movieCard {
+  max-width: 230px;
+  width: 230px;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.movieCard > img {
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.movieCard > .hover {
+  z-index: 99;
+  height: max-content;
+  width: 18rem;
+  position: absolute;
+  top: -18vh;
+  left: 0;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
+  background-color: #181818;
+  transition: 0.3s ease-in-out;
+}
+
+.image-video-container {
+  position: relative;
+  height: 140px;
+}
+
+.image-video-container > img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  z-index: 4;
+  position: absolute;
+}
+
+.image-video-container > video {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  z-index: 4;
+  position: absolute;
+}
+
+.hover > .info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons > .controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icons svg {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.icons svg:hover {
+  color: #b8b8b8;
+}
+
+.icons > .controls > svg:not(:first-child),
+.icons > .info > svg {
+  border: solid #b8b8b8 1.5px;
+  border-radius: 50px;
+}
+
+.icons > .controls > svg:not(:first-child) {
+  font-size: 1.1rem;
+  padding: 8px;
+}
+
+.icons > .controls > svg:first-of-type {
+  font-size: 2.8rem;
+}
+
+.icons > .info {
+  display: flex;
+  align-items: center;
+}
+
+.icons > .info > svg {
+  font-size: 1.6rem;
+  padding: 4px;
+}
+
+.info-container > .genres {
+  display: flex;
+}
+
+.info-container > .genres > ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 0.6rem;
+  padding-left: 0;
+}
+
+.info-container > .genres li {
+  padding-right: 0.7rem;
+}
+.info-container > .genres li:first-of-type {
+  list-style-type: none;
+}

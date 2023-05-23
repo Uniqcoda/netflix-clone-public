@@ -1,0 +1,17 @@
+.userList .content {
+  display: flex;
+  flex-direction: column;
+  margin: 2.3rem;
+  margin-top: 8rem;
+  gap: 3rem;
+}
+
+.userList h1 {
+  margin-left: 3rem;
+}
+
+.userList .grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

@@ -1,0 +1,10 @@
+.homeScreen__slider{
+  position: relative;
+  top: -220px;
+}
+
+@media (max-width: 992px) {
+  .homeScreen__slider {
+    top: -180px;
+  }
+}
